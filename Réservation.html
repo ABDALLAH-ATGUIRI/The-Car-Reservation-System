@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="Réservation.css" />
+    <title>Rent Me Now</title>
+  </head>
+
+<body>
+  <header class="menu">
+    <div id="my-logo">
+      <img src="images/téléchargement (1).png" alt="logo" id="logo" />
+    </div>
+    <nav class="nav-bar">
+      <div class="menu-disctop">
+        <ul>
+          <li>
+            <a href="Accuil.html">Accueil</a>
+          </li>
+          <li>
+            <a href="Gallerie.html">Gallerie</a>
+          </li>
+          <li>
+            <a href="Réservation.html">Réservation</a>
+          </li>
+          <li>
+            <a href="Contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="serch-bar">
+          <hr />
+          <button id="serch">
+            <img src="images/search.png" alt="serch" />
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <a href="javascript:void(0);" id="icon" onclick="nav_bar()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="menu-mobil topnav responsive" id="myTopnav">
+        <div class="serch-bar">
+          <input type="text" class="search-btn" placeholder="Search.." />
+          <button id="serch">
+            <img src="images/search.png" alt="serch" />
+          </button>
+        </div>
+        <ul>
+          <li>
+            <a href="Accuil.html">Accueil</a>
+          </li>
+          <li>
+            <a href="Gallerie.html">Gallerie</a>
+          </li>
+          <li>
+            <a href="Réservation.html">Réservation</a>
+          </li>
+          <li>
+            <a href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <aside class="cont-reserve">
+    <div class="sect">
+      <!-- <h3>Trouvons ensemble la voiture idéale...</h3> -->
+      <div class="inp-nb">
+        <!-- <label for="type">type du véhicule :</label> -->
+        <select id="type" class="first-slect" onchange="random() , produitList()">
+          <option style="display: none">Type du véhicule</option>
+          <option>Moto</option>
+          <option>Camion</option>
+          <option>Compact</option>
+          <option>Citadine</option>
+          <option>Utilitaire</option>
+          <option>Berline</option>
+          <option>Engin de chantier</option>
+        </select>
+      </div>
+
+      <div id="carburant" class="inp-nb">
+        <!-- <label for="carburant ">Carburant :</label> -->
+        <select class="first-slect">
+          <option style="display: none">Carburant</option>
+        </select>
+      </div>
+      <div id="boite" class="inp-nb">
+        <!-- <label for="carburant ">Carburant :</label> -->
+        <select class="first-slect">
+          <option style="display: none">Boite à vitesse</option>
+        </select>
+      </div>
+
+    </div>
+  </aside>
+  <main class="product-list">
+
+
+    <section class="VÉHICULES list" id="voitures" style="display: none">
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/cars/car-1.jpg " alt=" " class="img-box" />
+
+          <h1 class="name">2019 PORSCHE MACAN TURBO</h1>
+          <div class="model">PORSCHE</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/cars/car-2.jpg " alt=" " class="img-box" />
+
+          <h1 class="name">2018 BENTAYGA MANSORY BLACK</h1>
+          <div class="model">MANSORY</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/cars/car-3.jpg " alt=" " class="img-box" />
+          <h1 class="name">2020 MODEL YEAR MINI JOHN COOPER</h1>
+          <div class="model">MINI</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/cars/car-4.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 MODEL MERCEDES-BENZ G 63 AMG</h1>
+          <div class="model">MERCEDES- BENZ</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/cars/car-5.jpeg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2021 RR SV ATB - MADAGASCAR ORANGE</h1>
+          <div class="model">LAND ROVER</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/cars/car-6.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 MODEL YEAR MINI JOHN COOPER</h1>
+          <div class="model">MINI</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/cars/car-7.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2019 PORSCHE BOXSTER 718 S 2.5 LED</h1>
+          <div class="model">PORSCHE</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/cars/car-8.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 MERCEDES BENZ GLC 63 S COUPE</h1>
+          <div class="model">MERCEDES- BENZ</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/cars/car-9.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 G 63 BRABUS 800 XLP ADVENTURE</h1>
+          <div class="model">BRABUS</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/cars/car-10.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 BRAND NEW MCLAREN GT - WHITE</h1>
+          <div class="model">MCLAREN</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/cars/car-11.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2019 LAMBORGHINI HURACAN EVO</h1>
+          <div class="model">LAMBORGHINI</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/cars/car-12.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 BRAND NEW MCLAREN GT - WHITE</h1>
+          <div class="model">MCLAREN</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/cars/car-13.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 ROLLS-ROYCE CULLINAN - MANSORY</h1>
+          <div class="model">MANSORY</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/cars/car-14.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2019 PORSCHE BOXSTER 718 S 2.5 LED</h1>
+          <div class="model">PORSCHE</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/cars/car-15.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2021 NEW MCLAREN 765LT - ORANGE</h1>
+          <div class="model">MCLAREN</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="VÉHICULES list" id="motos" style="display: none">
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/moto/moto-1.jpg " alt=" " class="img-box" />
+
+          <h1 class="name">2019 PORSCHE MACAN TURBO</h1>
+          <div class="model">PORSCHE</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/moto/moto-18.jpg " alt=" " class="img-box" />
+
+          <h1 class="name">2018 BENTAYGA MANSORY BLACK</h1>
+          <div class="model">MANSORY</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/moto/moto-3.jpg" alt=" " class="img-box" />
+          <h1 class="name">2020 MODEL YEAR MINI JOHN COOPER</h1>
+          <div class="model">MINI</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/moto/moto-4.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name ">2020 MODEL MERCEDES-BENZ G 63 AMG</h1>
+          <div class="model">MERCEDES- BENZ</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/moto/moto-5.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2021 RR SV ATB - MADAGASCAR ORANGE</h1>
+          <div class="model">LAND ROVER</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/moto/moto-6.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 MODEL YEAR MINI JOHN COOPER</h1>
+          <div class="model">MINI</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/moto/moto-7.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2019 PORSCHE BOXSTER 718 S 2.5 LED</h1>
+          <div class="model">PORSCHE</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/moto/moto-8.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 MERCEDES BENZ GLC 63 S COUPE</h1>
+          <div class="model">MERCEDES- BENZ</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/moto/moto-9.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 G 63 BRABUS 800 XLP ADVENTURE</h1>
+          <div class="model">BRABUS</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/moto/moto-10.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 BRAND NEW MCLAREN GT - WHITE</h1>
+          <div class="model">MCLAREN</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/moto/moto-16.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2019 LAMBORGHINI HURACAN EVO</h1>
+          <div class="model">LAMBORGHINI</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/moto/moto-13.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 BRAND NEW MCLAREN GT - WHITE</h1>
+          <div class="model">MCLAREN</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/moto/moto-17.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 ROLLS-ROYCE CULLINAN - MANSORY</h1>
+          <div class="model">MANSORY</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/moto/moto-14.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2019 PORSCHE BOXSTER 718 S 2.5 LED</h1>
+          <div class="model">PORSCHE</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/moto/moto-11.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2021 NEW MCLAREN 765LT - ORANGE</h1>
+          <div class="model">MCLAREN</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="VÉHICULES list" id="camios" style="display: none">
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/camio/camio-1.jpg " alt=" " class="img-box" />
+
+          <h1 class="name">2019 PORSCHE MACAN TURBO</h1>
+          <div class="model">PORSCHE</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/camio/camio-2.jpg " alt=" " class="img-box" />
+
+          <h1 class="name">2018 BENTAYGA MANSORY BLACK</h1>
+          <div class="model">MANSORY</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/camio/camio-3.jpg" alt=" " class="img-box" />
+          <h1 class="name">2020 MODEL YEAR MINI JOHN COOPER</h1>
+          <div class="model">MINI</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/camio/camio-4.jpg " alt=" " class="img-box" />
+
+
+          <h1 class="name ">2020 MODEL MERCEDES-BENZ G 63 AMG</h1>
+          <div class="model">MERCEDES- BENZ</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/camio/camio-5.jpg" alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2021 RR SV ATB - MADAGASCAR ORANGE</h1>
+          <div class="model">LAND ROVER</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/camio/camio-6.jpg" alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 MODEL YEAR MINI JOHN COOPER</h1>
+          <div class="model">MINI</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/camio/camio-7.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2019 PORSCHE BOXSTER 718 S 2.5 LED</h1>
+          <div class="model">PORSCHE</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/camio/camio-8.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 MERCEDES BENZ GLC 63 S COUPE</h1>
+          <div class="model">MERCEDES- BENZ</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/camio/camio-9.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 G 63 BRABUS 800 XLP ADVENTURE</h1>
+          <div class="model">BRABUS</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/camio/camio-10.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 BRAND NEW MCLAREN GT - WHITE</h1>
+          <div class="model">MCLAREN</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/camio/camio-11.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2019 LAMBORGHINI HURACAN EVO</h1>
+          <div class="model">LAMBORGHINI</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/camio/camio-12.jpg" alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 BRAND NEW MCLAREN GT - WHITE</h1>
+          <div class="model">MCLAREN</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/camio/camio-13.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 ROLLS-ROYCE CULLINAN - MANSORY</h1>
+          <div class="model">MANSORY</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/camio/camio-14.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2019 PORSCHE BOXSTER 718 S 2.5 LED</h1>
+          <div class="model">PORSCHE</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/camio/camio-15.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2021 NEW MCLAREN 765LT - ORANGE</h1>
+          <div class="model">MCLAREN</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="VÉHICULES list" id="engin" style="display: none">
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/engin_de_chantier/engin-2.jpeg " alt=" " class="img-box" />
+
+          <h1 class="name">2019 PORSCHE MACAN TURBO</h1>
+          <div class="model">PORSCHE</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/engin_de_chantier/engin-4.jpeg " alt=" " class="img-box" />
+
+          <h1 class="name">2018 BENTAYGA MANSORY BLACK</h1>
+          <div class="model">MANSORY</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <div class="info">
+          <img src="images/engin_de_chantier/engin-5.jpeg" alt=" " class="img-box" />
+          <h1 class="name">2020 MODEL YEAR MINI JOHN COOPER</h1>
+          <div class="model">MINI</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/engin_de_chantier/engin-6.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 id="name ">2020 MODEL MERCEDES-BENZ G 63 AMG</h1>
+          <div class="model">MERCEDES- BENZ</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/engin_de_chantier/engin-7.jpeg" alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2021 RR SV ATB - MADAGASCAR ORANGE</h1>
+          <div class="model">LAND ROVER</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/engin_de_chantier/engin-8.jpeg" alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 MODEL YEAR MINI JOHN COOPER</h1>
+          <div class="model">MINI</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/engin_de_chantier/engin-9.jpeg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2019 PORSCHE BOXSTER 718 S 2.5 LED</h1>
+          <div class="model">PORSCHE</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/engin_de_chantier/engin-10.jpeg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 MERCEDES BENZ GLC 63 S COUPE</h1>
+          <div class="model">MERCEDES- BENZ</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/engin_de_chantier/engin-11.png " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 G 63 BRABUS 800 XLP ADVENTURE</h1>
+          <div class="model">BRABUS</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/engin_de_chantier/engin-13.jpeg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 BRAND NEW MCLAREN GT - WHITE</h1>
+          <div class="model">MCLAREN</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/engin_de_chantier/engin-14.jpeg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2019 LAMBORGHINI HURACAN EVO</h1>
+          <div class="model">LAMBORGHINI</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/engin_de_chantier/engin-15.jpeg" alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 BRAND NEW MCLAREN GT - WHITE</h1>
+          <div class="model">MCLAREN</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/engin_de_chantier/engin-16.jpg" alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2020 ROLLS-ROYCE CULLINAN - MANSORY</h1>
+          <div class="model">MANSORY</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/engin_de_chantier/engin-17.jpg " alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2019 PORSCHE BOXSTER 718 S 2.5 LED</h1>
+          <div class="model">PORSCHE</div>
+        </div>
+      </div>
+      <div class="box" onclick="duree() ">
+        <img src="images/engin_de_chantier/engin-18.jpg" alt=" " class="img-box" />
+
+        <div class="info">
+          <h1 class="name">2021 NEW MCLAREN 765LT - ORANGE</h1>
+          <div class="model">MCLAREN</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <section class="sect-duree">
+
+    <div class="cont-duree" id="duree" style="display: none;">
+      <h1>Durée de réservation par jour:</h1>
+      <div class="date-se">
+        <input class="date" type="number" name="Number " id="jour" placeholder="Number de jours" min="1" max="120">
+
+      </div>
+    <input class="submet" id="btn-sub" type="button" value="submet" onclick="calcule(),duree()">
+    </div>
+
+
+    <div id="afichage" >
+    <div  style=" display: none; " class="contoner"></div>
+    </div>
+    
+
+    
+
+  </section>
+  
+
+  <footer>
+    <div class="long">
+      <span>English</span>
+      <span>Deutsch</span>
+      <span>Italiano</span>
+      <span>Français</span>
+      <span>Español</span>
+      <span>日本語</span>
+    </div>
+    <div class="footer-link">
+      <div class="links">
+        <h3>Liens express</h3>
+        <hr />
+        <span>Home</span>
+        <span>Offres d’emploi</span>
+        <span>Règlement REACH</span>
+      </div>
+      <div class="links">
+        <h3>Liens express</h3>
+        <hr />
+        <span>Home</span>
+        <span>Offres d’emploi</span>
+        <span>Règlement REACH</span>
+      </div>
+      <div class="links">
+        <h3>Liens express</h3>
+        <hr />
+        <span>Home</span>
+        <span>Offres d’emploi</span>
+        <span>Règlement REACH</span>
+      </div>
+      <div class="links">
+        <h3>Venez nous rendre visite sur</h3>
+        <hr />
+        <span>YouTube</span>
+        <span>Facebook</span>
+        <span>Twitter</span>
+        <span>Instagram</span>
+      </div>
+    </div>
+    <center>
+      <div class="copyright">
+        <div class="lineicons">
+          <img src="images/twitterIcon.png " class="icon-f" />
+          <img src="images/youtubeIcon.png " class="icon-f" />
+        </div>
+
+        <p>© 2021 RentMeNow. All rights reserved.</p>
+
+        <div class="lineicons">
+          <img src="images/facebookIcon.png " class="icon-f" />
+          <img src="images/instagram.png " class="icon-f" />
+        </div>
+      </div>
+    </center>
+  </footer>
+</body>
+<script src="js.js"></script>
+
+</html>

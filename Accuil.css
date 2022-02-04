@@ -1,0 +1,573 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: poppins, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+#logo {
+  width: 70px;
+  /* height: 100px; */
+}
+.menu {
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-disctop{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.responsive{
+    display: none;
+}
+.menu-disctop ul{
+    
+width: 90%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.serch-bar{
+    display: flex;
+}
+.nav-bar {
+  width: 50%;
+}
+.nav-bar ul li a {
+    position: relative;
+  color: black;
+
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #262626;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .4s linear;
+}
+nav ul li a:hover:before{
+    transform-origin: right;
+    transform: scaleX(1);
+}
+#serch {
+  border: none;
+  background: none;
+}
+#serch img {
+  width: 18px;
+}
+.sect-head {
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.fa{
+    position: relative;
+    color: #000;
+    font-size: 35px;
+    float: right;
+    display: none;
+}
+
+#background-image {
+  width: 60vw;
+  height: 90vh;
+}
+.head_p {
+  padding: 2%;
+  font-size: 17px;
+  /* font-weight: 500; */
+  line-height: 1.6;
+}
+.us img {
+  width: 49.2vw;
+  height: 70vh;
+}
+.us p {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: tomato;
+  padding: 1%;
+  bottom: 16px;
+  margin-left: 12px;
+}
+.about-us {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.service {
+  height: 80vh;
+  background-color: #262626;
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-around;
+}
+.our_service {
+  width: 35%;
+  height: 95%;
+  padding: 2%;
+  line-height: 1.6;
+  color: white;
+  font-size: 14px;
+  /* padding-left: 4%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.our_service button {
+  height: 45px;
+  width: 50%;
+  background: none;
+  color: #ffffff;
+  font-weight: 600;
+  border-width: 3px;
+  border-color: #fff;
+  align-self: center;
+}
+.contener-child img {
+  width: 280px;
+  height: 70%;
+}
+.contener-child {
+  position: relative;
+  padding: 1%;
+  padding-top: 5%;
+}
+.contener-child span {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 600;
+  left: 5%;
+  bottom: 32%;
+}
+
+.contener-service {
+  display: flex;
+  overflow-x: scroll;
+
+  color: #ffffff;
+  width: 60%;
+}
+.contener-service::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  /* height: 30vh; */
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  justify-content: center;
+  padding-top: 5%;
+}
+.title a {
+  text-decoration: none;
+  padding-top: 20px;
+  color: black;
+  font-size: 24px;
+}
+.cars-marques {
+  display: grid;
+  /* justify-content: center; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 5%;
+}
+.logos {
+  padding: 10%;
+  height: 80px;
+  justify-self: center;
+}
+#plus {
+  height: 40px;
+  width: 15vw;
+  align-self: center;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  border-width: 3px;
+  left: 40%;
+  margin-bottom: 5%;
+}
+footer {
+  height: 70vh;
+  background-color: #262626;
+}
+.long {
+  font-size: 16px;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.icon-f {
+  width: 30px;
+}
+.copyright {
+    padding-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  color: #ffffff;
+  font-size: 14px;
+}
+.footer-link {
+  height: 50%;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.links span{
+  font-size: 14px;
+  color: #757575;
+
+}
+.links hr{
+  color: #757575;
+}
+@media screen and (max-width:950px) {
+
+
+    .nav-bar ul li a {
+        font-size: 18px;
+    }
+    .sect-head{
+        flex-direction: column;
+    }
+    #background-image{
+        width: 100%;
+        height: 70vh;
+    }
+    .head_p{
+        padding:5%;
+    }
+    .footer-link{
+      font-size: 14px;
+    }
+    .us img {
+      width: 49.5vw;
+      height: 60vh;
+  }
+  .cars-marques{
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 8%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+@media screen and (max-width:800px) {
+
+    .menu-disctop{
+        display: none;
+    }
+    .serch-bar{display: flex;}
+    .menu-mobil{
+        position: absolute;
+        height: 50vh;
+        width: 100%;
+        background-color: #ffffff;
+        left: 0;
+        bottom: 40%;
+        padding-left: 5%;
+        transition: all 5s;
+    }
+    .menu-mobil ul{
+       
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 60%;
+        padding-top: 2%;
+        padding-left: 2%;
+       
+    }
+    .menu-mobil ul li a{
+        display: flex;
+    }
+    .search-btn{
+        font-size: 18px;
+        padding-left: 2%;
+        width: 80%;
+        border-width: 0 0 2px;
+        border-color: black;
+        background: none;
+        height: 40px;
+    }
+    .fa{display: block;}
+    .our_service {
+      width: 50%;
+    font-size: 16px;}
+    .title{
+      font-size: 24px;
+    }
+    .footer-link {
+      font-size: 12px;
+  }
+  .icon-f {
+    width: 30px;
+}
+.long {
+  font-size: 14px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:750px){
+  /* .us img {
+    width: 49.5vw;
+    height: 50vh;
+} */
+#logo{
+width: 60px;
+}
+#background-image{
+  height: 50vh;
+}
+.head_p{
+  font-size: 16px;
+}
+.us img {
+  width: 95%;
+  height: 50vh;
+  padding-left: 2.5%;
+}
+.about-us {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.us p {
+  position: relative;
+  font-size: 14px;
+  padding: 2%;
+  width: 40%;
+  bottom: 50px;
+  left: 3%;
+  
+}
+.our_service {
+  width: 90%;
+  height: 95%;
+  padding: 2%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.our_service button{
+  width: 30%
+}
+.service {
+  height: 115vh;
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.contener-service {
+  display: flex;
+  overflow-x: scroll;
+  color: #ffffff;
+  width: 90%;
+  height: 100%;
+}
+.contener-child span {
+  font-size: 22px;
+  left: 10%;
+  bottom: 15%;
+}
+
+
+.contener-child img {
+    height: 50vh;
+}
+.title {
+  font-size: 24px;
+}
+#plus{
+  font-size: 12px;
+}
+.long {
+  font-size: 16px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  font-size: 14px;
+  height: 16vh;
+  padding-top: 3%;
+  padding-left: 2%;
+}
+.footer-link {
+  height: 72vh;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  flex-direction: column;
+}
+.copyright {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  color: #ffffff;
+}
+footer{
+  height: 90vh;
+}
+.logos{
+  padding: 10%;
+}
+.cars-marques{
+  grid-template-columns: 1fr 1fr;
+}
+
+}
+@media screen and (max-width:550px){
+  #logo{
+    width: 55px;
+    }
+    .us img{
+      height: 40vh;
+    }
+    .us p{
+      width: 45%;
+      font-size: 12px;
+    }
+    .our_service{
+      font-size: 14px;
+    }
+    .our_service button{
+      font-size:12px ;
+      width: 40%;
+      height: 40px;
+    }
+    .title {
+      font-size: 18px;
+      padding-top: 10%;
+  }
+  .logos{
+      width: 90px;
+  }
+  #plus {
+    font-size: 12px;
+    width: 20%;
+}
+.long{
+  font-size: 12px;
+}
+.copyright{
+  font-size: 10px;
+}
+}
+@media screen and (max-width:450px){
+  #logo{
+    width: 45px;
+    padding: 5%;
+  }
+  #icon{
+    width: 30px;
+  }
+  .head_p {
+    font-size: 12px;
+    text-align: center;
+}
+.us p{
+  width: 50%;
+  font-size: 12px;
+}
+.our_service {
+  font-size: 12px;
+}
+
+.title a{
+  font-size: 16px;
+}
+#plus {
+  font-size: 12px;
+  width: 30%;
+  left: 35%;
+}
+.icon-f {
+  width: 20px;
+}
+.links{
+  font-size: 12px;
+}
+}

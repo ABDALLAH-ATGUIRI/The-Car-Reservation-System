@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="Contact.css" />
+    <title>Rent Me Now</title>
+  </head>
+  <body>
+    <header class="menu">
+      <div id="my-logo">
+        <img src="images/téléchargement (1).png" alt="logo" id="logo" />
+      </div>
+      <nav class="nav-bar">
+        <div class="menu-disctop">
+          <ul>
+            <li>
+              <a href="Accuil.html">Accueil</a>
+            </li>
+            <li>
+              <a href="Gallerie.html">Gallerie</a>
+            </li>
+            <li>
+              <a href="Réservation.html">Réservation</a>
+            </li>
+            <li>
+              <a href="Contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="serch-bar">
+            <hr />
+            <button id="serch">
+              <img src="images/search.png" alt="serch" />
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <a href="javascript:void(0);" id="icon" onclick="nav_bar()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="menu-mobil topnav responsive" id="myTopnav">
+          <div class="serch-bar">
+            <input type="text" class="search-btn" placeholder="Search.." />
+            <button id="serch">
+              <img src="images/search.png" alt="serch" />
+            </button>
+          </div>
+          <ul>
+            <li>
+              <a href="Accuil.html">Accueil</a>
+            </li>
+            <li>
+              <a href="Gallerie.html">Gallerie</a>
+            </li>
+            <li>
+              <a href="Réservation.html">Réservation</a>
+            </li>
+            <li>
+              <a href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+        <div class="parent_container">
+          <!-- <div id="up">
+            <p>
+              N'hésitez pas à nous contacter, nous sommes toujours ouverts à la
+              discussion nouveaux projets idées créatives opportunités de faire
+              partie de vos visions !
+            </p>
+          </div> -->
+          <div class="second_container">
+            <div id="up-01">
+              <h1>CONTACT-NOUS</h1>
+            </div>
+
+            <form id="inputs">
+              <div class="ferst-inputs">
+                <input
+                  class="input-parts"
+                  type="text"
+                  name="Username"
+                  id="Username"
+                  placeholder="Username"
+                  autocomplete="off"
+                />
+                <input
+                  class="input-parts input-parts"
+                  type="email"
+                  name="E_Mail"
+                  id="E_Mail"
+                  placeholder="E-mail"
+                />
+              </div>
+              <br />
+              <input
+                class="input-phone input-parts"
+                type="number"
+                name="Phone_Number"
+                id="Phone_Number"
+                placeholder="Phone Number"
+                maxlenght="8"
+              /><br />
+              <input
+                class="input-phone input-parts"
+                type="text"
+                name="Sujet"
+                id="Sujet"
+                placeholder="Sujet"
+                maxlenght="8"
+              /><br />
+              <input
+                class="input-message input-parts"
+                type="text"
+                name="Message"
+                id="Message"
+                placeholder="Text"
+                maxlenght="8"
+              /><br />
+              <input
+                class="contactbutton"
+                type="button"
+                value="Send Message"
+                onclick="validation()"
+              />
+            </form>
+          </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="long">
+          <span>English</span>
+          <span>Deutsch</span>
+          <span>Italiano</span>
+          <span>Français</span>
+          <span>Español</span>
+          <span>日本語</span>
+        </div>
+        <div class="footer-link">
+          <div class="links">
+            <h3>Liens express</h3>
+            <hr />
+            <span>Home</span>
+            <span>Offres d’emploi</span>
+            <span>Règlement REACH</span>
+          </div>
+          <div class="links">
+            <h3>Liens express</h3>
+            <hr />
+            <span>Home</span>
+            <span>Offres d’emploi</span>
+            <span>Règlement REACH</span>
+          </div>
+          <div class="links">
+            <h3>Liens express</h3>
+            <hr />
+            <span>Home</span>
+            <span>Offres d’emploi</span>
+            <span>Règlement REACH</span>
+          </div>
+          <div class="links">
+            <h3>Venez nous rendre visite sur</h3>
+            <hr />
+            <span>YouTube</span>
+            <span>Facebook</span>
+            <span>Twitter</span>
+            <span>Instagram</span>
+          </div>
+        </div>
+        <center>
+          <div class="copyright">
+            <div class="lineicons">
+              <img src="images/twitterIcon.png " class="icon-f" />
+              <img src="images/youtubeIcon.png " class="icon-f" />
+            </div>
+    
+            <p>© 2021 RentMeNow. All rights reserved.</p>
+    
+            <div class="lineicons">
+              <img src="images/facebookIcon.png " class="icon-f" />
+              <img src="images/instagram.png " class="icon-f" />
+            </div>
+          </div>
+        </center>
+      </footer>
+  </body>
+  <script src="js.js"></script>
+   
+
+</html>
