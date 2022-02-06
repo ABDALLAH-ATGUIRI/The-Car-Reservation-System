@@ -1,10 +1,10 @@
 
 function nav_bar() {
     var x = document.getElementById("myTopnav");
-    if (x.className === "menu-mobil") {
-      x.className += " responsive";
+    if (x.style.display=='block') {
+      x.style.display='none';
     } else {
-      x.className = "menu-mobil";
+        x.style.display='block';
     }
   }
   // ------------------------------------------------------

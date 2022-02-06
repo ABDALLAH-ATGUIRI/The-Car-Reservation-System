@@ -26,9 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.responsive{
-    display: none;
-}
+
 .menu-disctop ul{
     
 width: 90%;
@@ -50,6 +48,7 @@ width: 90%;
   font-weight: 600;
 
 }
+
 
 nav ul li a:before{
     position: absolute;
@@ -376,7 +375,11 @@ footer {
 
 
 
-
+@media screen and (min-width:800px){
+  .responsive{
+    display: none !important;
+}
+}
 
 @media screen and (max-width:750px){
   /* .us img {

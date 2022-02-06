@@ -262,6 +262,11 @@ footer {
   }
 
   }
+  @media screen and (min-width:800px){
+    .responsive{
+      display: none !important;
+  }
+  }
   @media screen and (max-width:800px) {
 
     .menu-disctop{
