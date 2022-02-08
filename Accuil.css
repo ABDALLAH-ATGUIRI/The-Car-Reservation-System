@@ -146,9 +146,11 @@ nav ul li a:hover:before{
   border-color: #fff;
   align-self: center;
 }
-.contener-child img {
-  width: 280px;
-  height: 70%;
+.child {
+  width: 400px;
+    height: 80%;
+    background-position: center;
+    background-size: cover;
 }
 .contener-child {
   position: relative;
@@ -157,10 +159,10 @@ nav ul li a:hover:before{
 }
 .contener-child span {
   position: absolute;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
-  left: 5%;
-  bottom: 32%;
+  left: 10%;
+  bottom: 30%;
 }
 
 .contener-service {
@@ -312,7 +314,7 @@ footer {
         width: 100%;
         background-color: #ffffff;
         left: 0;
-        bottom: 40%;
+        bottom: 36%;
         padding-left: 5%;
         transition: all 5s;
     }
@@ -375,7 +377,7 @@ footer {
 
 
 
-@media screen and (min-width:800px){
+@media screen and (min-width:750px){
   .responsive{
     display: none !important;
 }
@@ -399,6 +401,9 @@ width: 60px;
   width: 95%;
   height: 50vh;
   padding-left: 2.5%;
+}
+.responsive{
+  display: none;
 }
 .about-us {
   position: relative;
@@ -443,8 +448,7 @@ width: 60px;
 }
 .contener-child span {
   font-size: 22px;
-  left: 10%;
-  bottom: 15%;
+  left: 20%;
 }
 
 

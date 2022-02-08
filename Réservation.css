@@ -184,39 +184,37 @@ option {
 } */
 /* -------------------------------durée--------------------------- */
 .sect-duree{
-  background-image: url(images/unnamed.jpg);
+  background-image: url(images/Hoteliers.jpg);
   background-size: cover;
-  background-position: left;
-  height: 250px;
+  background-position: center;
+  height: 350px;
   padding: 10%;
-  /* padding-bottom: 10%; */
-  color: #ffffff;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+
 }
 
 .cont-duree{
-  width: 400px;
-  height: 100%;
+  width: 40%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #262626d1;
+  background-color: #ffffff;
+  position: absolute;
 }
 .cont-duree h1{
-  font-size: 18px;
+  font-size: 24px;
 }
 .date{
-  border: none;
-  border-bottom: 2px solid;
-  padding: 3%;
+  padding: 2%;
   color: rgb(0, 0, 0);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  width: 20vw;
+  width: 50%;
 }
 .va-f{
   font-weight: 600;
@@ -262,7 +260,7 @@ option {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #ffffffcf;
+    background-color: #ffffff;
 
   
 }
@@ -325,7 +323,12 @@ footer {
   .nav-bar ul li a {
     font-size: 18px;
 }
-
+.date{
+  width: 80%;
+}
+.cont-duree{
+  width: 50%;
+}
 .footer-link{
   font-size: 14px;
 }
@@ -339,9 +342,7 @@ footer {
   width: 25vw;
   font-size: 16px;
 }
-.contoner{
-  height: 380px;
-}
+
 }
 @media screen and (min-width:800px){
   .responsive{
@@ -360,7 +361,7 @@ footer {
       width: 100%;
       background-color: #ffffff;
       left: 0;
-      bottom: 40%;
+      bottom: 36%;
       padding-left: 5%;
       transition: all 5s;
   }
@@ -402,9 +403,7 @@ footer {
 }
 .long {
 font-size: 14px;}
-.contoner{
-  height: 350px;
-}
+
 
 }
 @media screen and (max-width:750px){
@@ -421,9 +420,14 @@ font-size: 14px;}
     font-size: 14px;
   }
   .contoner{
-    height: 300px;
+
     font-size: 16px;
   }
+  
+
+.cont-duree h1 {
+    font-size: 20px;
+}
     .submet{
       font-size: 12px;
       width: 20vw;
@@ -486,6 +490,12 @@ font-size: 14px;}
     .box{
       width: 40vw;
     }
+    .cont-duree {
+      width: 80%;
+  }
+  .cont-duree h1 {
+    font-size: 18px;
+}
 .long{
   font-size: 12px;
 }

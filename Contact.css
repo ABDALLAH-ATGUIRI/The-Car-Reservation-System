@@ -183,8 +183,8 @@
     background-color: white;
     color: black;
     width: 10vw;
-    height: 50px;
-    font-size: 14px;
+    height: 40px;
+    font-size: 16px;
     box-shadow: 1px 1px 1px rgb(0 0 0), 1px 1px 1px rgb(255 255 255), 1px 8px 10px rgb(0 0 0);
     align-self: center;
 }
@@ -279,7 +279,7 @@ footer {
         width: 100%;
         background-color: #ffffff;
         left: 0;
-        bottom: 40%;
+        bottom: 36%;
         padding-left: 5%;
         transition: all 5s;
     }

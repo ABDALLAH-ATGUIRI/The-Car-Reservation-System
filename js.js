@@ -80,12 +80,15 @@ function produitList(){
 }
 // -------------------------------------------------------------------------------------
 function duree(){
+
+
     let duree = document.getElementById('duree');
     if(duree.style.display=='none'){
         duree.style.display='flex';
     }else{
         duree.style.display='none';
     }
+
     
 }
 
@@ -191,7 +194,7 @@ function calcule() {
         }
        
         let string = `
-        <div  class="contoner">
+        <div  class="contoner" id="factur">
           <div>
             <label>type du véhicule :  </label>
             <input class="va-f" type="button" value="${ type}">
@@ -211,7 +214,7 @@ function calcule() {
           <div> <label>prix final :  </label>
             <input class="va-f" type="button" value=" ${ S} $">
           </div>
-          <input class="submet" type="button" value="Conferm" id="reserve()">
+          <input class="submet" type="button" value="Conferm" onclick="reserve()">
         </div>
       `;
     
@@ -251,19 +254,36 @@ function validation() {
     }
 
     let lorem = ` Username :  ${username} \n E_mail : ${email} \n Téléphone : ${phone} \n Sujet : ${sujet} \n Message : ${message}`;
-    swal("Good job!", lorem, "success");
+
+
+    swal("Good job!", lorem , "success").then(function() {
+        window.location.reload(true)});
+    
+      
+
+   
 
 }
-// -------------------------------------------------
-reserve.addEventListener("click", ()=>{
-        swal("Good job!", "success");
-        window.location.reload(true);
-})
 
+// -------------------------------------------------
+
+   
+// swal-button.addEventListener("onclick", ()=>{window.location.reload(true);});
 
     
 
 
 // }
-
+//-------------------------------------------------------------------
+function reserve(){
+    swal("Bon travail!", " Commande confirmmée!", "success")
+    .then(function() {
+        let duree = document.getElementById('duree');
+        if(duree.style.display=='none'){
+            duree.style.display='flex';
+        }else{
+            duree.style.display='none';
+        }});;
+    
+}
 
