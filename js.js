@@ -214,7 +214,7 @@ function calcule() {
           <div> <label>prix final :  </label>
             <input class="va-f" type="button" value=" ${ S} $">
           </div>
-          <input class="submet" type="button" value="Conferm" onclick="reserve()">
+          <input class="submet" type="button" value="Confirmer" onclick="reserve()">
         </div>
       `;
     
@@ -276,7 +276,7 @@ function validation() {
 // }
 //-------------------------------------------------------------------
 function reserve(){
-    swal("Bon travail!", " Commande confirmmée!", "success")
+    swal("Bon travail!", " Commande confirmée!", "success")
     .then(function() {
         let duree = document.getElementById('duree');
         if(duree.style.display=='none'){
